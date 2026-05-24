@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Happy 22nd Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- PAGE 1 : Hero -->
+  <section class="page active" id="page1">
+    <div class="sparkle-row">✨ 🌸 ✨</div>
+    <div class="badge-ring">
+      <div class="badge-inner">
+        <span class="badge-num">22</span>
+        <span class="badge-label">years</span>
+      </div>
+    </div>
+    <h1 class="hero-title">Happy Birthday</h1>
+    <p class="hero-sub">My Love</p>
+    <p class="hero-msg">Today the whole universe celebrates<br/>the day you were born. 🌹</p>
+    <div class="candle-row">
+      <span class="candle">🕯️</span>
+      <span class="candle">🕯️</span>
+      <span class="cake-emoji">🎂</span>
+      <span class="candle">🕯️</span>
+      <span class="candle">🕯️</span>
+    </div>
+    <p class="from-name">With all my love — <strong>Zimam</strong> 💕</p>
+    <button class="nav-btn" onclick="goTo(2)">Our Moments →</button>
+  </section>
+
+  <!-- PAGE 2 : Photo Gallery -->
+  <section class="page" id="page2">
+    <h2 class="page-title">Our Moments 📸</h2>
+    <p class="page-sub">Every picture tells our story</p>
+    <div class="gallery">
+      <div class="photo-card wide">
+        <div class="photo-frame">
+          <img src="photos/photo1.jpg" alt="Moment 1"/>
+        </div>
+        <p class="photo-caption">My favourite smile 😊</p>
+      </div>
+      <div class="photo-card">
+        <div class="photo-frame">
+          <img src="photos/photo2.jpg" alt="Moment 2"/>
+        </div>
+        <p class="photo-caption">Pure happiness 💫</p>
+      </div>
+      <div class="photo-card">
+        <div class="photo-frame">
+          <img src="photos/photo3.jpg" alt="Moment 3"/>
+        </div>
+        <p class="photo-caption">You light up my world ✨</p>
+      </div>
+    </div>
+    <div class="nav-row">
+      <button class="nav-btn secondary" onclick="goTo(1)">← Back</button>
+      <button class="nav-btn" onclick="goTo(3)">My Letter →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3 : Love Letter -->
+  <section class="page" id="page3">
+    <div class="letter-icon">💌</div>
+    <h2 class="page-title">A Letter For You</h2>
+    <div class="letter-card">
+      <p>My dearest love,</p>
+      <p>On your 22nd birthday, I want you to know that you are the most beautiful thing that has ever happened to me.</p>
+      <p>Every laugh we share, every quiet moment, every adventure — I hold them all close to my heart.</p>
+      <p>You deserve every good thing this world has to offer, and I promise to be by your side through all of it.</p>
+      <p>22 looks absolutely perfect on you. 🌹</p>
+      <p class="letter-sign">Forever yours,<br/><strong>Zimam</strong> 💕</p>
+    </div>
+    <div class="nav-row">
+      <button class="nav-btn secondary" onclick="goTo(2)">← Back</button>
+      <button class="nav-btn" onclick="goTo(4)">Make a Wish →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 : Wish -->
+  <section class="page" id="page4">
+    <div class="sparkle-row">⭐ 🌟 ⭐</div>
+    <h2 class="page-title">Make a Wish 🌠</h2>
+    <p class="page-sub">Close your eyes and wish for everything you deserve</p>
+    <div class="big-cake">🎂</div>
+    <div class="wishes-list">
+      <div class="wish-item">🌹 May your 22nd year be your most beautiful yet</div>
+      <div class="wish-item">💫 May every dream you hold come true</div>
+      <div class="wish-item">🌸 May you always feel loved and cherished</div>
+      <div class="wish-item">✨ May life bring you endless joy and laughter</div>
+    </div>
+    <button class="wish-btn" id="wishBtn" onclick="makeWish()">🕯️ Blow the Candles!</button>
+    <div class="wish-result" id="wishResult">
+      <p>🎉 Happy 22nd Birthday! 🎉</p>
+      <p>I love you more than words can say.</p>
+      <p class="final-sign">— Zimam 💖</p>
+    </div>
+    <button class="nav-btn secondary mt" onclick="goTo(1)">← Start Over</button>
+  </section>
+
+  <!-- Dot Navigation -->
+  <div class="dots">
+    <span class="dot active" onclick="goTo(1)"></span>
+    <span class="dot" onclick="goTo(2)"></span>
+    <span class="dot" onclick="goTo(3)"></span>
+    <span class="dot" onclick="goTo(4)"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
